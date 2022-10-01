@@ -1,5 +1,10 @@
 import React from "react";
-import { Bars3Icon, UserCircleIcon } from "@heroicons/react/24/solid";
+import { Bars3Icon } from "@heroicons/react/24/solid";
+import {
+  HeartIcon,
+  MagnifyingGlassIcon,
+  ShoppingBagIcon,
+} from "@heroicons/react/24/outline";
 
 type Props = {};
 
@@ -13,8 +18,10 @@ const Header = (props: Props) => {
       </div>
 
       {/* User Details */}
-      <div>
-        <UserCircleIcon height={24} width={24} />
+      <div className="flex space-x-2 items-center">
+        <MagnifyingGlassIcon height={24} width={24} />
+        <HeartIcon height={24} width={24} />
+        <ShoppingBagIcon height={24} width={24} />
       </div>
     </div>
   );
